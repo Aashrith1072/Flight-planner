@@ -1,4 +1,4 @@
-#Flight Planner (C++)
+## Flight Planner (C++)
 
 A small C++ project that answers one question:
 
