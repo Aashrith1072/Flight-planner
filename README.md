@@ -1,4 +1,4 @@
-## Flight Planner (C++)
+## Flight Planner
 
 A small C++ project that answers one question:
 
@@ -54,7 +54,7 @@ The question asks for **one** best route (not all of them). If no trip is possib
 | Route 3 | `O(m log m)` |
 
 Here `m` = number of flights.
----
+
 
 ## 2. An Example to Understand the Question
 
