@@ -10,7 +10,7 @@ I built this to understand how flight search really works when many flights over
 
 ---
 
-## 1. The Problem (in simple words)
+## 1. The Problem 
 
 You are given a list of flights. Each flight has:
 
