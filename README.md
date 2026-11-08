@@ -4,9 +4,9 @@ A small C++ project that answers one question:
 
 > **"I want to go from city A to city B. There are many flights with different times and prices. Which flights should I take?"**
 
-I built this to understand how flight search really works when many flights overlap (many flights leave the same city, many reach the same city, and every flight has its own time and price).
+I built this to understand how flight search really works when many flights overlap like many flights leave the same city, many reach the same city, and every flight has its own time and price.
 
-> **Important:** I did **not** use C++'s ready-made `queue` or `priority_queue`. I wrote my **own `Queue` class** and my **own `Heap` class**, then created objects of them and used their methods. (More in section 5.)
+> **Important:** I did **not** use C++'s ready-made `queue` or `priority_queue`. I wrote my **own `Queue` class** and my **own `Heap` class**, then created objects of them and used their methods.
 
 ---
 
