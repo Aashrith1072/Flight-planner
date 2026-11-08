@@ -150,7 +150,7 @@ A **level** means *how many flights you have taken so far*.
 | Level 2 | F3 (after F0), F5 and F6 (after F1) |
 | Level 3 | F4 (after F3) |
 
-Now the problem becomes **path-finding on a graph** (a graph is dots joined by arrows).
+Now the problem becomes **path-finding on a graph**.
 
 | Task | Tool used | Why |
 |---|---|---|
@@ -160,7 +160,7 @@ Now the problem becomes **path-finding on a graph** (a graph is dots joined by a
 
 ---
 
-## 4. Flights are Referred to by Position (No Pointers)
+## 4. Flights are Referred to by Position
 
 I did not use pointers. All flights live in one list (`vector<Flight> flights`), and I talk about a flight by its **position** in that list.
 
