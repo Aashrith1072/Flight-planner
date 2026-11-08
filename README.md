@@ -359,7 +359,7 @@ Trip: start city 0, end city 4, `t1 = 0`, `t2 = 300`. (Flight data is in section
 | 5 | F6 | Lands in city 4, also 2 flights, but 250 is later than 150. Not better. | F4 |
 | 6 | F4 | Level 3 is more than 2. **Stop.** | |
 
-**Answer: F1 → F5** ✅
+**Answer: F1 → F5** 
 
 ### Route 2 (Dijkstra, smaller = cheaper)
 
@@ -373,7 +373,7 @@ Trip: start city 0, end city 4, `t1 = 0`, `t2 = 300`. (Flight data is in section
 | 5 | F6 (500) | Lands in city 4, but 500 is not less than 270. |
 | 6 | F5 (700) | Lands in city 4, but 700 is not less than 270. |
 
-**Answer: F0 → F3 → F4, total price 270** ✅
+**Answer: F0 → F3 → F4, total price 270** 
 
 ### Route 3 (Dijkstra, smaller = fewer flights, then cheaper)
 
@@ -389,7 +389,7 @@ Each heap item is written as (flights, price).
 | 5 | F5 (2, 700) | Same 2 flights, but 700 is not cheaper than 500. |
 | 6 | F4 (3, 270) | 3 flights is more than 2. **Stop.** |
 
-**Answer: F1 → F6 (2 flights, price 500)** ✅
+**Answer: F1 → F6 (2 flights, price 500)** 
 
 ---
 
