@@ -96,6 +96,59 @@ Here `m` = number of flights.
 
 Why? Because the same city can be reached at different times and prices. What matters is *which flight you are on*, because that decides when you land and how much you have paid. A city cannot remember that, but a flight can.
 
+### Why not use cities as the dots?
+
+A city dot **cannot remember** *when* you arrived or *how much* you paid. But the same city can be reached in many different ways.
+
+**Example:** In our flights, city 4 can be reached in three different ways.
+
+| Way to reach city 4 | Lands at | Total price |
+|---|---|---|
+| F1 → F5 | 150 | 700 |
+| F1 → F6 | 250 | 500 |
+| F0 → F3 → F4 | 200 | 270 |
+
+All three end in the **same city** but with **different times and prices**. A city dot would have to keep only one of them and throw the others away. A flight dot keeps each way separate.
+
+#### Problem 1: The 20-minute rule gets lost
+
+- With cities as dots, the cheapest way to reach city 2 looks like F0 (50) + F2 (20) = **70**.
+- But F0 lands at 30 and F2 leaves at 40. That is only **10 minutes**, so this trip is **not allowed**.
+- The real cheapest way to city 2 is F0 + F3 = **170**.
+
+A city dot does not remember that you landed at time 30, so it cannot check the 20-minute rule. A flight dot knows its own landing time, so it can.
+
+#### Problem 2: The "best" way depends on time, not only price
+
+Imagine you can reach a city in two ways:
+
+| Way | Price | Lands at |
+|---|---|---|
+| Way A | 50 | 200 (late) |
+| Way B | 150 | 60 (early) |
+
+The next flight leaves at time **100**.
+
+- If the city dot keeps only the **cheapest** way (Way A), you land at 200 and **miss** the flight at 100.
+- Only Way B works.
+
+So keeping one "best" answer per city gives a wrong result.
+
+#### Problem 3: Many flights between the same two cities
+
+F2 and F3 both go from city 1 to city 2, but they have different times and prices. An arrow between two **city** dots cannot tell them apart.
+
+#### Why flights as dots fix this
+
+A flight dot already knows:
+- when it leaves and when it lands,
+- its price,
+- which city it starts and ends in.
+
+So the 20-minute rule is checked on each arrow, and every time and price option stays separate.
+
+**In one line:** city dots forget *when* and *how much*, but flight dots remember both.
+
 We draw an arrow from flight **F1** to flight **F2** when:
 
 - F1 lands in the city where F2 starts, and
