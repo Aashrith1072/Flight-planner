@@ -53,8 +53,7 @@ The question asks for **one** best route (not all of them). If no trip is possib
 | Route 2 | `O(m log m)` |
 | Route 3 | `O(m log m)` |
 
-Here `m` = number of flights. (`O(m)` means "time grows in a straight line with the number of flights". `O(m log m)` is only a little slower.)
-
+Here `m` = number of flights.
 ---
 
 ## 2. An Example to Understand the Question
