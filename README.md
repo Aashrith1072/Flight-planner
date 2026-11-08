@@ -162,13 +162,13 @@ Now the problem becomes **path-finding on a graph**.
 
 ## 4. Flights are Referred to by Position
 
-I did not use pointers. All flights live in one list (`vector<Flight> flights`), and I talk about a flight by its **position** in that list.
+All flights live in one list (`vector<Flight> flights`), and I talk about a flight by its **position** in that list.
 
 | Idea | How it looks in code |
 |---|---|
 | Flight number 3 | `flights[3]` |
 | "Flight just before this one" | `int parent` (a position, `-1` means none) |
-| Flights leaving city `c` | `cities[c]` (a list of positions) |
+| Flights leaving city `c` means flights whose starting city is city c | `cities[c]` (a list of positions) |
 | A route | A list of positions, like `{1, 5}` |
 
 ### Notes stored inside every flight
