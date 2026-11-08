@@ -86,7 +86,7 @@ Here `m` = number of flights.
 |---|---|---|
 | **Route 1** (fewest flights, then earliest) | **F1 → F5** | Both F1→F5 and F1→F6 use 2 flights. F5 lands at 150, which is earlier than 250. |
 | **Route 2** (cheapest) | **F0 → F3 → F4** | Total price is 270. The others cost 700 and 500. |
-| **Route 3** (fewest flights, then cheapest) | **F1 → F6** | Both use 2 flights. F6 costs 500, which is cheaper than 700. |
+| **Route 3** (fewest flights, then cheapest) | **F1 → F6** | Both F1→F5 and F1→F6 use 2 flights. F6 costs 500, which is cheaper than 700. |
 
 ---
 
