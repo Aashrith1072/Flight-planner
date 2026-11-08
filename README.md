@@ -232,7 +232,7 @@ Start: `items = []`, `head = 0`
 | 8 | `dequeue()` | `[0, 1, 3]` | 3 | returns **3** |
 | 9 | `is_empty()` | `[0, 1, 3]` | 3 | `head == 3`, so **true** |
 
-The old items 0 and 1 are still inside `items`, but they are behind `head`, so we treat them as gone. Order in: 0, 1, 3. Order out: 0, 1, 3. ✅
+The old items 0 and 1 are still inside `items`, but they are behind `head`, so we treat them as gone. Order in: 0, 1, 3. Order out: 0, 1, 3. 
 
 | Method | What it does |
 |---|---|
@@ -278,7 +278,7 @@ Now take items out with `extract()`:
 | 7 | `extract()` | `[700]` | **200** | The last item (700) goes to the top. |
 | 8 | `extract()` | `[]` | **700** | Last item. |
 
-Items came out as **50, 170, 200, 700**: smallest first. ✅ Each `insert` and `extract` takes `O(log m)` time.
+Items came out as **50, 170, 200, 700**: smallest first. Each `insert` and `extract` takes `O(log m)` time.
 
 ### 5.3 Errors: `throw`
 
